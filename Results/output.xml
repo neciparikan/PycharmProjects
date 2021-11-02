@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211102 20:53:11.555" rpa="false" schemaversion="2">
+<suite id="s1" name="Calculator" source="/Users/necippc/Desktop/PycharmProjects/CallMethod/programs/Calculator.robot">
+<test id="s1-t1" name="Basic Calculator">
+<kw name="Call Method" library="BuiltIn">
+<var>${addition}</var>
+<arg>${cal}</arg>
+<arg>add</arg>
+<arg>20</arg>
+<arg>40</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211102 20:53:11.596" level="INFO">${addition} = 60.0</msg>
+<status status="PASS" starttime="20211102 20:53:11.595" endtime="20211102 20:53:11.596"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${addition}</arg>
+<arg>60</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20211102 20:53:11.596" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20211102 20:53:11.596" endtime="20211102 20:53:11.596"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${test}</var>
+<arg>${cal}</arg>
+<arg>findSmallestInt</arg>
+<arg>${numbers}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211102 20:53:11.597" level="INFO">${test} = 1</msg>
+<status status="PASS" starttime="20211102 20:53:11.597" endtime="20211102 20:53:11.597"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${test}</arg>
+<arg>1</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" starttime="20211102 20:53:11.597" endtime="20211102 20:53:11.597"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${is_contains_apple}</var>
+<arg>${cal}</arg>
+<arg>kwargs_demo_1</arg>
+<arg>orange</arg>
+<arg>mango</arg>
+<arg>Apple</arg>
+<arg>Kiwi</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211102 20:53:11.598" level="INFO">${is_contains_apple} = True</msg>
+<status status="PASS" starttime="20211102 20:53:11.598" endtime="20211102 20:53:11.598"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${is_contains_apple}==True</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211102 20:53:11.599" endtime="20211102 20:53:11.599"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${addition}</var>
+<arg>${cal}</arg>
+<arg>add</arg>
+<arg>30</arg>
+<arg>40</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211102 20:53:11.600" level="INFO">${addition} = 70.0</msg>
+<status status="PASS" starttime="20211102 20:53:11.599" endtime="20211102 20:53:11.600"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${addition}</arg>
+<arg>70</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20211102 20:53:11.600" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20211102 20:53:11.600" endtime="20211102 20:53:11.600"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${is_contains_fruit_mango}</var>
+<arg>${cal}</arg>
+<arg>kwargs_demo_2</arg>
+<arg>name=abc</arg>
+<arg>salary=1000</arg>
+<arg>fruit=mango</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211102 20:53:11.600" level="INFO">${is_contains_fruit_mango} = True</msg>
+<status status="PASS" starttime="20211102 20:53:11.600" endtime="20211102 20:53:11.601"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${is_contains_fruit_mango}==True</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211102 20:53:11.601" endtime="20211102 20:53:11.601"/>
+</kw>
+<status status="PASS" starttime="20211102 20:53:11.595" endtime="20211102 20:53:11.601"/>
+</test>
+<doc>'Call Method' keyword demo</doc>
+<status status="PASS" starttime="20211102 20:53:11.562" endtime="20211102 20:53:11.602"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Calculator">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
