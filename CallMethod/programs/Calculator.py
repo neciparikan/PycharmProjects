@@ -18,11 +18,6 @@ class BasicCalculator:
                 return False
 
     def findSmallestInt(self, arr):
-        # smallest = []
-        # for i in range(0, len(kwargs)):
-        #     if (kwargs[i] < smallest):
-        #         smallest = kwargs[i]
-        # return smallest
 
         arr.sort()
         return arr[0]
